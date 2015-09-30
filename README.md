@@ -29,14 +29,14 @@ Artificial Intelligence and Machine Learning workshop
 
 ###############################################################################
 00. Introduction to Python programming language
-    Python is simple, clear and well supported.
-    The blessing of ipython.
-    Variables.
-    List and array.
-    Loops.
-    Functions (methods).
-    Classes.
-    *Package.
+Python is simple, clear and well supported.  
+The blessing of ipython.  
+Variables.  
+List and array.  
+Loops.  
+Functions (methods).  
+Classes.  
+*Package.  
 ###############################################################################
 
 ###############################################################################
