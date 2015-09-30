@@ -28,7 +28,7 @@ Artificial Intelligence and Machine Learning workshop
 ###############################################################################
 
 ###############################################################################
-00. Introduction to Python programming language
+__00. Introduction to Python programming language
 Python is simple, clear and well supported.  
 The blessing of ipython.  
 Variables.  
@@ -37,20 +37,18 @@ Loops.
 Functions (methods).  
 Classes.  
 *Package.  
-###############################################################################
 
 ###############################################################################
-01. Artificial Inteligence and Machine Learning - general view
+__01. Artificial Inteligence and Machine Learning - general view
 
-Why AI is and is not what you think.
-Why practice is better than theory.
-Does AI==ML? And why (generally) not.
-Past, present, future. And why (mainly) future.
-Schemea.
-###############################################################################
+Why AI is and is not what you think.  
+Why practice is better than theory.  
+Does AI==ML? And why (generally) not.  
+Past, present, future. And why (mainly) future.  
+Schemea.  
 
 ###############################################################################
-02. Data structure, ML workflow
+__02. Data structure, ML workflow
 
 Dimensionality.
 Our examples' data structure.
