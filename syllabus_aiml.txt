@@ -89,31 +89,65 @@ http://neuralnetworksanddeeplearning.com/chap1.html
 ###############################################################################
 05. Artificial Neural Networks - exercises
 
-    pybrain - Slightly modified pybrain fnn example (classify color):
+pybrain - Slightly modified pybrain fnn example (classify color):
+https://raw.githubusercontent.com/grik/aiml/master/fnn_simple.py
 
-    pybrain - Additional utilites to previous script
-    (learning curve and data visualisation):
+    Exercise 05.00. Learn the net the difference between red and green colors.
+    Exercise 05.01. Change the number of neurons in hidden layer (lower or 
+    raise the number) and see what happens.
 
+pybrain - Additional utilites to previous script
+(learning curve and data visualisation):
+https://raw.githubusercontent.com/grik/aiml/master/fnn_addons.py
+
+###############################################################################
+
+###############################################################################
+06. Supported Vector Machines
+    Hyperplane.
+    Classification.
+    Parameters.
+    Linear kernel vs RBF kernel
+###############################################################################
+
+###############################################################################
+07. Supported Vector Machines - exercises
+
+    fMRI data 2-class visual cortex BOLD contrast classification using
+    feature selection (sklearn SelectKBest) and linear SVC (sklearn SVC):
+https://github.com/mikbuch/pymri/blob/master/examples/svc/svc_selectkbest.py
+
+    fMRI data 2-class visual cortex BOLD contrast classification using
+    feature extraction (sklearn PCA) and linear SVC (sklearn SVC):
+https://github.com/mikbuch/pymri/blob/master/examples/svc/svc_pca.py
 ###############################################################################
 
 ###############################################################################
 08. Multiclass classification, reconsolidation
+
     Up to this time we were considering only two classes (one vs one)
     classification scenarios. Now we introduce multiclass classfication (three
     and more).
 
     One vs one
     One vs rest
-    multiclass output
+    Multi-class classification
 
-    ANN are better than SVC in multiclass classification.
+    ANN are better than SVC for performing multiclass classification.
 ###############################################################################
 
 ###############################################################################
 09. Deep learning
+
     With pylearn2:
-    http://deeplearning.net/software/pylearn2/tutorial/notebook_tutorials.html#notebook-tutorials
+http://deeplearning.net/software/pylearn2/tutorial/notebook_tutorials.html#notebook-tutorials
     Short story about vast networks.
     Convolution.
-    From Softmax to Convolution.
+    From Softmax to Convolution with pylearn2.
+###############################################################################
+
+###############################################################################
+10. Deep learning - exercises
+
+    TBA
 ###############################################################################
