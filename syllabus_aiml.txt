@@ -90,7 +90,7 @@ http://neuralnetworksanddeeplearning.com/chap1.html
 05. Artificial Neural Networks - exercises
 
 pybrain - Slightly modified pybrain fnn example (classify color):
-https://raw.githubusercontent.com/grik/aiml/master/fnn_simple.py
+https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_simple.py
 
     Exercise 05.00. Learn the net the difference between red and green colors.
     Exercise 05.01. Change the number of neurons in hidden layer (lower or 
@@ -98,7 +98,7 @@ https://raw.githubusercontent.com/grik/aiml/master/fnn_simple.py
 
 pybrain - Additional utilites to previous script
 (learning curve and data visualisation):
-https://raw.githubusercontent.com/grik/aiml/master/fnn_addons.py
+https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_addons.py
 
 ###############################################################################
 
@@ -115,11 +115,9 @@ https://raw.githubusercontent.com/grik/aiml/master/fnn_addons.py
 
     fMRI data 2-class visual cortex BOLD contrast classification using
     feature selection (sklearn SelectKBest) and linear SVC (sklearn SVC):
-https://github.com/mikbuch/pymri/blob/master/examples/svc/svc_selectkbest.py
 
     fMRI data 2-class visual cortex BOLD contrast classification using
     feature extraction (sklearn PCA) and linear SVC (sklearn SVC):
-https://github.com/mikbuch/pymri/blob/master/examples/svc/svc_pca.py
 ###############################################################################
 
 ###############################################################################
