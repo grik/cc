@@ -11,10 +11,11 @@ from pybrain.tools.shortcuts import buildNetwork
 from pybrain.supervised.trainers import BackpropTrainer
 from pybrain.datasets import ClassificationDataSet
 
-
+# training and test dataset creation
 trndata = ClassificationDataSet(3, 1, nb_classes=2)
 tstdata = ClassificationDataSet(3, 1, nb_classes=2)
 
+# color information (RGB values)
 color = [
     [214, 0, 0], [210, 62, 90], [147, 10, 36], [212, 52, 52],
     [229, 76, 98], [204, 0, 67], [188, 62, 109], [235, 0, 51],
@@ -65,13 +66,17 @@ for i in range(50):
         '  train error: %5.2f%%' % trnresult
         )
 
+# single sample test
 test_input = [27, 12, 225]
+# activate the network (feedforward) using this one sample
 test_output = net.activate(test_input)
+# print output
 print(
     '\ninput values: %d, %d, %d\noutput value: %f' %
     (test_input[0], test_input[1], test_input[2], test_output)
     )
 
+# prepare explicit answer
 answer = \
     '-----------------\n' \
     'So the color is: \n'
@@ -79,4 +84,5 @@ if test_output < 0.5:
     answer += 'red'
 else:
     answer += 'blue'
+# print answer
 print(answer+'\n')

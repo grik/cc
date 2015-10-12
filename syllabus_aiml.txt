@@ -17,13 +17,13 @@ Artificial Intelligence and Machine Learning workshop
 06. Supported Vector Machines
 07. Supported Vector Machines - exercises
 08. Multiclass classification, reconsolidation
-09. Deep learning
-10. Deep learning - exercises
+*09. Deep learning
+*10. Deep learning - exercises
 
 
 ###############################################################################
 #
-#     DETAILED INFORMATION
+#     DETAILED INFORMATIONS
 #
 ###############################################################################
 
@@ -92,9 +92,12 @@ http://neuralnetworksanddeeplearning.com/chap1.html
 pybrain - Slightly modified pybrain fnn example (classify color):
 https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_simple.py
 
-    Exercise 05.00. Learn the net the difference between red and green colors.
-    Exercise 05.01. Change the number of neurons in hidden layer (lower or 
-    raise the number) and see what happens.
+    Exercise 05.00.
+        Learn the net correctly classify red and green color.
+
+    Exercise 05.01.
+        Change the number of neurons in hidden layer (lower or raise it)
+        and see what happens.
 
 pybrain - Additional utilites to previous script
 (learning curve and data visualisation):
@@ -115,13 +118,25 @@ https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_addons.py
 
     fMRI data 2-class visual cortex BOLD contrast classification using
     feature selection (sklearn SelectKBest) and linear SVC (sklearn SVC):
+https://github.com/grik/aiml/blob/master/svc_sklearn/svc_selectkbest.py
 
     fMRI data 2-class visual cortex BOLD contrast classification using
     feature extraction (sklearn PCA) and linear SVC (sklearn SVC):
+https://github.com/grik/aiml/blob/master/svc_sklearn/svc_pca.py
+
+    Exercise 07.00.
+        Change the feature selection's (SelectKBest) k parameter to 50 and see
+        what happens. How does the classifier learn having less variables
+        (less information)?
+
+    Exercise 07.01.
+        Change the feature extraction's (PCA) n_components parameter to 50
+        and see what happens. How does the classifier learn having less
+        variables (less information)?
 ###############################################################################
 
 ###############################################################################
-08. Multiclass classification, reconsolidation
+08. Multiclass classification and reconsolidation
 
     Up to this time we were considering only two classes (one vs one)
     classification scenarios. Now we introduce multiclass classfication (three
@@ -134,18 +149,31 @@ https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_addons.py
     ANN are better than SVC for performing multiclass classification.
 ###############################################################################
 
-###############################################################################
-09. Deep learning
 
-    With pylearn2:
+###############################################################################
+09. Multiclass classification - exercises
+
+    SVM multiclass   
+    ANN multiclass
+###############################################################################
+
+###############################################################################
+10. Deep learning
+    
+    Why do we need deep learning at all?
+    It performs better than other classifiers.
+http://arxiv.org/abs/1502.00093
+
+    We will use pylearn2:
 http://deeplearning.net/software/pylearn2/tutorial/notebook_tutorials.html#notebook-tutorials
+
     Short story about vast networks.
     Convolution.
     From Softmax to Convolution with pylearn2.
 ###############################################################################
 
 ###############################################################################
-10. Deep learning - exercises
+11. Deep learning - exercises
 
     TBA
 ###############################################################################
