@@ -1,5 +1,11 @@
-# aiml
-Artificial Intelligence and Machine Learning workshop
+# cc
+Cognitive Computing workshop 
+
+keywords:
+* Cognitive Science
+* Artificial Intelligence
+* Machine Learning
+* Neuroscience
 
 
 ###############################################################################
@@ -9,7 +15,7 @@ Artificial Intelligence and Machine Learning workshop
 ###############################################################################
 
 00. Introduction to Python programming language
-01. Artificial Inteligence and Machine Learning - general view
+01. Cognitive Computing - general view
 02. Data structure, ML workflow
 03. Preprocessing and Metrics (model performance)- exercises
 04. Artificial Neural Networks
@@ -17,8 +23,9 @@ Artificial Intelligence and Machine Learning workshop
 06. Supported Vector Machines
 07. Supported Vector Machines - exercises
 08. Multiclass classification, reconsolidation
-*09. Deep learning
-*10. Deep learning - exercises
+09. Multiclass classification - exercises
+*10. Deep learning
+*11. Deep learning - exercises
 
 
 ###############################################################################
@@ -40,10 +47,11 @@ Artificial Intelligence and Machine Learning workshop
 ###############################################################################
 
 ###############################################################################
-01. Artificial Inteligence and Machine Learning - general view
+01. Cognitive Computing - general view
 
-    Why AI is and is not what you think.  
-    Why practice is better than theory.  
+    Why Artificial Intelligence is what you think and why it isn't.
+    Why practice is better than theory (to use tool and to create tool). 
+    Machine Learning and it's tools.
     Does AI==ML? And why (generally) not.  
     Past, present, future. And why (mainly) future.  
     Schemea.  
@@ -53,7 +61,7 @@ Artificial Intelligence and Machine Learning workshop
 02. Data structure, ML workflow
 
     Dimensionality.
-    Our examples' data structure.
+    Our examples' data structure (neuroscientific data).
     Features, attributes, classes, decisions.
     Curse of dimensionality.
     Flattening and information loss.
@@ -89,7 +97,7 @@ http://neuralnetworksanddeeplearning.com/chap1.html
 ###############################################################################
 05. Artificial Neural Networks - exercises
 
-pybrain - Slightly modified pybrain fnn example (classify color):
+    pybrain - Slightly modified pybrain fnn example (classify color):
 https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_simple.py
 
     Exercise 05.00.
@@ -99,10 +107,9 @@ https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_simple.py
         Change the number of neurons in hidden layer (lower or raise it)
         and see what happens.
 
-pybrain - Additional utilites to previous script
-(learning curve and data visualisation):
+    pybrain - Additional utilites to previous script
+    (learning curve and data visualisation):
 https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_addons.py
-
 ###############################################################################
 
 ###############################################################################
@@ -146,7 +153,8 @@ https://github.com/grik/aiml/blob/master/svc_sklearn/svc_pca.py
     One vs rest
     Multi-class classification
 
-    ANN are better than SVC for performing multiclass classification.
+    ANN are better than SVC for performing multiclass classification
+    (in our case).
 ###############################################################################
 
 
@@ -158,7 +166,7 @@ https://github.com/grik/aiml/blob/master/svc_sklearn/svc_pca.py
 ###############################################################################
 
 ###############################################################################
-10. Deep learning
+*10. Deep learning
     
     Why do we need deep learning at all?
     It performs better than other classifiers.
@@ -167,13 +175,13 @@ http://arxiv.org/abs/1502.00093
     We will use pylearn2:
 http://deeplearning.net/software/pylearn2/tutorial/notebook_tutorials.html#notebook-tutorials
 
-    Short story about vast networks.
+    A short story about the vast networks.
     Convolution.
     From Softmax to Convolution with pylearn2.
 ###############################################################################
 
 ###############################################################################
-11. Deep learning - exercises
+*11. Deep learning - exercises
 
     TBA
 ###############################################################################

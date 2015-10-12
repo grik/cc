@@ -92,7 +92,6 @@ for i in range(50):
         plt.axis([0, 50, 0, err+err*0.1])
         before_first = False
 
-
  
 '''
 
