@@ -1,4 +1,7 @@
 # Introductory script. The most important python expressions and operations.
+# Part 00 - Variables
+# author: Mikolaj Buchwald
+
 
 ############################################
 #                                          #
@@ -57,16 +60,14 @@ float(a)
 str(0.12)
 # out: '0.12'
 
+################################
+#          exercises           #
+################################
+'''
+Exercise 00.00
+    Create 4 variables, one of each type: int, float, bool, str
 
-############################################
-#                                          #
-#              CALCULATOR                  #
-#                                          #
-############################################
-
-
-############################################
-#                                          #
-#                 LISTS                    #
-#                                          #
-############################################
+Exercise 00.01
+    You have given variable a=42.21
+    Change variable type to str
+'''

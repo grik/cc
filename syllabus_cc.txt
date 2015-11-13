@@ -79,6 +79,9 @@ keywords:
     Principal Component Analysis (PCA).
     Confusion matrices.
     Precission and  accuracy.
+    Cross validation.
+    Sklearn's cross validation score and ShuffleSplit
+    Cross validation Pipeline
 ###############################################################################
 
 ###############################################################################
