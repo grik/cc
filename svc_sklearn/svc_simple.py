@@ -30,6 +30,8 @@ from sklearn.datasets.base import Bunch
 
 from os.path import expanduser
 
+# ### Load data ###############################################################
+# Path to direcotry with data
 # data_dir = expanduser('~') + '/workshops/aiml/data/pymvpa-exampledata/'
 data_dir = expanduser('~') + '/downloads/pymvpa-exampledata/'
 
@@ -54,12 +56,12 @@ mask = dataset_files.mask
 #   * mask.shape is (40, 64, 64)
 
 
-# ### Restrict to faces and houses
+# ### Restrict to faces and houses ############################################
 condition_mask = np.logical_or(conditions == 'face', conditions == 'house')
 X = fmri_data[..., condition_mask]
 y = y[condition_mask]
 
-# ### Masking step
+# ### Masking step ############################################################
 from pymri.utils import masking
 from nibabel import Nifti1Image
 

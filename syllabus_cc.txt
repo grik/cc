@@ -103,7 +103,7 @@ http://neuralnetworksanddeeplearning.com/chap1.html
 05. Artificial Neural Networks - exercises
 
     pybrain - Slightly modified pybrain fnn example (classify color):
-https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_simple.py
+https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_simple.py
 
     Exercise 05.00.
         Learn the net correctly classify red and green color.
@@ -114,7 +114,7 @@ https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_simple.py
 
     pybrain - Additional utilites to previous script
     (learning curve and data visualisation):
-https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_addons.py
+https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_addons.py
 ###############################################################################
 
 ###############################################################################
@@ -128,14 +128,28 @@ https://github.com/grik/aiml/blob/master/fnn_pybrain/fnn_addons.py
 ###############################################################################
 07. Supported Vector Machines - exercises
 
+################
+
+    simple example of fMRI Supported Vector Classifier:
+
+https://github.com/grik/cc/blob/master/svc_sklearn/svc_simple.py
+################
+################
+
     fMRI data 2-class visual cortex BOLD contrast classification using
     feature selection (sklearn SelectKBest) and linear SVC (sklearn SVC):
-https://github.com/grik/aiml/blob/master/svc_sklearn/svc_selectkbest.py
+
+https://github.com/grik/cc/blob/master/svc_sklearn/svc_selectkbest.py
+################
+################
 
     fMRI data 2-class visual cortex BOLD contrast classification using
     feature extraction (sklearn PCA) and linear SVC (sklearn SVC):
-https://github.com/grik/aiml/blob/master/svc_sklearn/svc_pca.py
 
+https://github.com/grik/cc/blob/master/svc_sklearn/svc_pca.py
+################
+################
+    
     Exercise 07.00.
         Change the feature selection's (SelectKBest) k parameter to 50 and see
         what happens. How does the classifier learn having less variables
