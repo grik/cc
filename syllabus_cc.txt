@@ -27,6 +27,9 @@ keywords:
 *10. Deep learning
 *11. Deep learning - exercises
 
+Dataset we will be working with:
+http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
+
 
 ###############################################################################
 #
@@ -70,6 +73,10 @@ keywords:
     Importance of data spatial orientation.
     Workflows.
     Supervised vs unsupervised learning.
+
+Dataset we will be working with during this course:
+http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
+
 ###############################################################################
 
 ###############################################################################
@@ -127,6 +134,12 @@ https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_addons.py
 
 ###############################################################################
 07. Supported Vector Machines - exercises
+
+    If you hadn't done it yet, please download example fMRI dataset from:
+http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
+
+    And untar it using the following command:
+tar xvfj pymvpa_exampledata.tar.bz2
 
 ################
 
