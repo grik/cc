@@ -1,5 +1,5 @@
 # Introductory script. The most important python expressions and operations.
-# Part 02 - Lists
+# Part 02 - Lists and Arrays
 # author: Mikolaj Buchwald
 
 
@@ -42,11 +42,34 @@ a[2:5]
 # out: [8, 3, 9]
 
 
+'''
+Exercise 02.00
+    Create list [6, 4, 9, 0, 5] and check its length.
+
+Exercise 02.01
+    Check what is the last element of the list created in exercise 02.00
+    (in both ways).
+
+Exercise 02.02
+    Get 2nd to 4th elemnts of the list (counting from 0).
+
+'''
+
+
 ################################
 #    basic list operations     #
 ################################
 
+# create a list
 b = [0, 4, 2, 1, 1, 7]
+
+# get maximal value of the list
+max(a)
+# out: 7
+
+# as well as minimal
+min(a)
+# out: 0
 
 # sum up elements
 sum(b)
@@ -105,6 +128,15 @@ c
 # out: [4, 7, 8]
 
 
+'''
+Exercise 02.03
+    Sort list [6, 4, 9, 0, 5].
+
+Exercise 02.04
+    Append integer 1 to the sorted list from previous exercise.
+    Then sort it again.
+'''
+
 ################################
 #            tuples            #
 ################################
@@ -122,18 +154,26 @@ c
 #        numpy arrays          #
 ################################
 
+# ### create numpy array
+import numpy as np
+
 # numpy is python package for numeric operation
 # It simulates C or JAVA-like arrays but is way more powerful in means of
 # simple and quick arithmetic operations as well as matrix support,
 # compatibility with many python packages for statistics,
 # machine learning, etc.
 
-# ### create numpy array
-import numpy as np
-
 d = np.array([4, 6, 2, 1, 6, 7, 9, 2])
 
 # ### and now it is simple to get:
+
+# max
+d.max()
+# out: 9
+
+# max
+d.min()
+# out: 1
 
 # sum
 d.sum()
@@ -159,3 +199,18 @@ d.std()
 d.sort()
 d
 # out: array([1, 2, 2, 4, 6, 6, 7, 9])
+
+'''
+Exercise 02.05
+    Create array [0.12, 0.55, 0.32, 0.9, -0.21].
+
+    Then get it's:
+        * maximal and minimal values,
+        * sum,
+        * product,
+        * mean,
+        * variance,
+        * standard deviation,
+
+   Sort the array.
+'''
