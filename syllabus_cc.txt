@@ -42,6 +42,7 @@ http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
 
     Python is simple, clear and well supported.
     The blessing of ipython.
+
     Variables.
 https://github.com/grik/cc/blob/master/introduction/00_variables.py
 
@@ -49,7 +50,7 @@ https://github.com/grik/cc/blob/master/introduction/00_variables.py
 https://github.com/grik/cc/blob/master/introduction/01_calculator.py
 
     Lists and Arrays.
-https://github.com/grik/cc/blob/master/introduction/02_lists_arrays.py
+https://github.com/grik/cc/blob/master/introduction/02_lists_and_arrays.py
 
     Conditionals and Loops.
 https://github.com/grik/cc/blob/master/introduction/03_conditionals_and_loops.py
