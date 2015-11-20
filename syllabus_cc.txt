@@ -94,15 +94,40 @@ https://github.com/grik/cc/blob/master/introduction/06_import_packages.py
 Dataset we will be working with during this course:
 http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
 
+    Exercise 02.00.
+        You have 21 subjects, two hands each, 100 tests for each hand for each
+        subject. Create a numpy array to store data from all tests from all
+        subjects.
+
+    Exercise 02.01.
+        Fill the 'cells', numpy values with random scores.
+
+    Exercise 02.02.
+        Now 'mask' data to get:
+            * all scores (tests results) for one, particular subject,
+            * all scores for left hand for each subject,
+            * the same for right hand,
+            * scores for 5 last subjects.
 ###############################################################################
 
 ###############################################################################
 03. Preprocessing and Metrics (model performance) - exercises
 
+    Feature reduction and feature transformation.
+
+    Transformation can reduce number of features (sklearn's
+    feature reductors' .transform() method). It can also just
+    change quality of the data (scaling, normalization).
+
     Feature selection.
     SelectKBest (data variability).
+
     Feature extraction.
     Principal Component Analysis (PCA).
+
+    Normalization.
+    Standardization.
+
     Confusion matrices.
     Precission and  accuracy.
     Cross validation.
