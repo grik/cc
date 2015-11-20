@@ -44,16 +44,25 @@ http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
     The blessing of ipython.
     Variables.
 https://github.com/grik/cc/blob/master/introduction/00_variables.py
+
     Calculator (ipython version).
 https://github.com/grik/cc/blob/master/introduction/01_calculator.py
-    List and array.
+
+    Lists and Arrays.
 https://github.com/grik/cc/blob/master/introduction/02_lists_arrays.py
-    Loops.
-https://github.com/grik/cc/blob/master/introduction/03_loops.py
+
+    Conditionals and Loops.
+https://github.com/grik/cc/blob/master/introduction/03_conditionals_and_loops.py
+
     Functions (methods).
 https://github.com/grik/cc/blob/master/introduction/04_functions.py
+
+    Scripts.
+https://github.com/grik/cc/blob/master/introduction/05_scripts.py
+
     Import packages.
-https://github.com/grik/cc/blob/master/introduction/05_import_packages.py
+https://github.com/grik/cc/blob/master/introduction/06_import_packages.py
+
     *Classes.
     *Package structure and installation.
 ###############################################################################
