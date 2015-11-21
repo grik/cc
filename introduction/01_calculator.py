@@ -32,7 +32,7 @@
 
 # IMPORTANT remark on division! #
 22/7
-# out: 7
+# out: 3
 # something is not right!
 
 22/7.0

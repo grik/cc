@@ -16,7 +16,7 @@
 # create list
 a = [5, 2, 8, 3, 9]
 a
-# out: [5, 2, 8]
+# out: [5, 2, 8, 3, 9]
 
 # list indices (indexes)
 a[0]
@@ -31,11 +31,11 @@ len(a)
 # ### get last element of the list (2 ways)
 # way 1:
 a[len(a)-1]
-# out: 8
+# out: 9
 
 # way 2 (more pythonish):
 a[-1]
-# out: 8
+# out: 9
 
 # get 2nd to 5th element of the list
 a[2:5]
