@@ -67,7 +67,7 @@ for i in range(50):
         )
 
 # single sample test
-test_input = [27, 12, 225]
+test_input = [0, 231, 190]
 # activate the network (feedforward) using this one sample
 test_output = net.activate(test_input)
 # print output

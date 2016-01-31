@@ -17,12 +17,12 @@ keywords:
 00. Introduction to Python programming language
 01. Cognitive Computing - general view
 02. Data structure, ML workflow
-03. Preprocessing and Metrics (model performance)- exercises
-04. Artificial Neural Networks
-05. Artificial Neural Networks - exercises
-06. Supported Vector Machines
-07. Supported Vector Machines - exercises
-08. Multiclass classification, reconsolidation
+03. Artificial Neural Networks
+04. Artificial Neural Networks - exercises
+05. Preprocessing and Metrics (model performance)
+06. Artificial Neural Networks - fMRI data
+07. Supported Vector Machines - fMRI data
+08. Multiclass classification and reconsolidation
 09. Multiclass classification - exercises
 *10. Deep learning
 *11. Deep learning - exercises
@@ -100,7 +100,7 @@ http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
         subjects.
 
     Exercise 02.01.
-        Fill the 'cells', numpy values with random scores.
+        Fill the 'cells', numpy values, with random scores.
 
     Exercise 02.02.
         Now 'mask' data to get:
@@ -111,7 +111,38 @@ http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
 ###############################################################################
 
 ###############################################################################
-03. Preprocessing and Metrics (model performance) - exercises
+03. Artificial Neural Networks
+
+    General intuitions.
+    Percepton.
+    Sigmoid neuron.
+    Learning.
+    Testing.
+
+Sources:
+http://neuralnetworksanddeeplearning.com/chap1.html
+###############################################################################
+
+###############################################################################
+04. Artificial Neural Networks - exercises
+
+    pybrain - Slightly modified pybrain fnn example (classify color):
+https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_simple.py
+
+    Exercise 05.00.
+        Learn the net correctly classify red and green color.
+
+    Exercise 05.01.
+        Change the number of neurons in hidden layer (lower or raise it)
+        and see what happens.
+
+    pybrain - Additional utilites to previous script
+    (learning curve and data visualisation):
+https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_addons.py
+###############################################################################
+
+###############################################################################
+05. Preprocessing and Metrics (model performance)
 
     Feature reduction and feature transformation.
 
@@ -136,20 +167,7 @@ http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
 ###############################################################################
 
 ###############################################################################
-04. Artificial Neural Networks
-
-    General intuitions.
-    Percepton.
-    Sigmoid neuron.
-    Learning.
-    Testing.
-
-Sources:
-http://neuralnetworksanddeeplearning.com/chap1.html
-###############################################################################
-
-###############################################################################
-05. Artificial Neural Networks - exercises
+06. Artificial Neural Networks - fMRI data
 
     pybrain - Slightly modified pybrain fnn example (classify color):
 https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_simple.py
@@ -167,15 +185,12 @@ https://github.com/grik/cc/blob/master/fnn_pybrain/fnn_addons.py
 ###############################################################################
 
 ###############################################################################
-06. Supported Vector Machines
+07. Supported Vector Machines - fMRI data
     Hyperplane.
     Classification.
     Parameters.
     Linear kernel vs RBF kernel
-###############################################################################
-
-###############################################################################
-07. Supported Vector Machines - exercises
+http://scikit-learn.org/stable/modules/svm.html#classification
 
     If you hadn't done it yet, please download example fMRI dataset from:
 http://www.pymvpa.org/files/pymvpa_exampledata.tar.bz2
@@ -240,22 +255,22 @@ https://github.com/grik/cc/blob/master/svc_sklearn/svc_pca.py
 ###############################################################################
 
 ###############################################################################
-*10. Deep learning
+10. Deep learning
     
     Why do we need deep learning at all?
     It performs better than other classifiers.
 http://arxiv.org/abs/1502.00093
 
-    We will use pylearn2:
-http://deeplearning.net/software/pylearn2/tutorial/notebook_tutorials.html#notebook-tutorials
+    We will use M. A. Nielsen's examples (he used theano package):
+http://neuralnetworksanddeeplearning.com/chap6.html
 
     A short story about the vast networks.
     Convolution.
-    From Softmax to Convolution with pylearn2.
+    From shallow architecture vs deep learning.
 ###############################################################################
 
 ###############################################################################
-*11. Deep learning - exercises
+11. Deep learning - exercises
 
     TBA
 ###############################################################################

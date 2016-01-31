@@ -85,12 +85,6 @@ for i in range(50):
 
     err = trainer.testOnData()
     errors.append(err)
-    plt.plot(errors, 'b')
-    plt.draw()
-    
-    if before_first:
-        plt.axis([0, 50, 0, err+err*0.1])
-        before_first = False
 
  
 '''
@@ -100,13 +94,6 @@ Additional utilities
 '''
 data_vis_all = np.array(color)
 data_vis = [data_vis_all[0:8].T, data_vis_all[8:16].T]
-
-def pesos_conexiones(net):
-    for mod in net.modules:
-        for conn in net.connections[mod]:
-            print(conn)
-            for cc in range(len(conn.params)):
-                print(conn.whichBuffers(cc), conn.params[cc])
 
 def plot(data):
     fig = plt.figure()
@@ -121,6 +108,8 @@ def plot(data):
         zs = data[i][2]
         ax.scatter(xs, ys, zs, c=cm[i][0], marker=cm[i][1], s=100)
 
+    ax.scatter(90, 231, 90, c='k', marker='x', s=180)
+
     ax.set_xlabel('Red')
     ax.set_ylabel('Green')
     ax.set_zlabel('Blue')
@@ -131,5 +120,4 @@ def plot(data):
 
     plt.show()
 
-pesos_conexiones(net)
 plot(data_vis)

@@ -1,18 +1,18 @@
 """
-svc_simple.py
+multipe_classifiers.py
 script
 
 ############################################
 ######  Written by: Mikolaj Buchwald  ######
 ############################################
 
-Example of SVC (Support Vector Classifier) and
-SelectKBest (feature selection) of the Haxby's database.
+Example of LDA, QDA, KNN and SVC and SelectKBest (feature selection)
+of the Haxby's database.
 
-Based strongly on Alexandre Abraham's code:
+Based on Alexandre Abraham's code:
     https://github.com/AlexandreAbraham/frontiers2013
 
-Novum is sampling step (split original dataset train and test
+Novum is splitting step (dataset divided into train and test
 subsets) and classification performed on test data.
 Leave-40%-samples-out cross validation has been performed to prove
 the accuracy of the model (classifier - SVC)
@@ -33,10 +33,10 @@ import nibabel
 # data_dir = '/tmp/pymvpa-exampledata/'
 data_dir = '/media/e0b555e6-cfa3-41fa-abd8-17ea6e249dc2/pymvpa-exampledata/'
 
-func=data_dir+'bold.nii.gz'
-session_target=data_dir+'attributes.txt'
-brain_mask_file=data_dir+'mask.nii.gz'
-conditions_target=data_dir+'attributes_literal.txt'
+func = data_dir+'bold.nii.gz'
+session_target = data_dir+'attributes.txt'
+brain_mask_file = data_dir+'mask.nii.gz'
+conditions_target = data_dir+'attributes_literal.txt'
 
 # fmri_data and mask are copied to break any reference to the original object
 bold_img = nibabel.load(func)
@@ -94,49 +94,65 @@ X_t = feature_selection.transform(X_t)
 
 ###############################################################################
 #                                                                             #
-#   SVC                                                                       #
+#   CLASSIFIERS                                                               #
 #                                                                             #
 ###############################################################################
 # Define the estimator
+from sklearn.lda import LDA
+from sklearn.qda import QDA
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
+# regression, bayes
+
+
+lda = LDA()
+qda = QDA()
+knn = KNeighborsClassifier(n_neighbors=5)
 svc = SVC(kernel='linear', C=0.01)
 
-# ### Fit and predict #########################################################
-
-# fit data, create hyperplane (model)
-svc.fit(X, y)
-
-# prior chance level
-print('Prior chance: %0.2f \n' % (y_t.sum()/float(y_t.shape[0])))
+models = [lda, qda, knn, svc]
 
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
 
-# predict samples' classes for TRAINING dataset (resubstitution)
-y_pred = svc.predict(X)
-confusion_matrix_X = confusion_matrix(y, y_pred)
+for model in models:
 
-accuracy_X = accuracy_score(y, y_pred)
-precision_X = precision_score(y, y_pred)
+    print('\n\n#############################################')
+    print(model)
 
-print('training dataset')
-print('confusion_matrix')
-print(confusion_matrix_X)
-print('accuracy: %.2f' % accuracy_X)
-print('precision: %.2f' % precision_X)
-print('')
+    # ### Fit and predict #####################################################
 
-# predict samples' classes for TESTING dataset
-y_pred_t = svc.predict(X_t)
-confusion_matrix_X_t = confusion_matrix(y_t, y_pred_t)
+    # fit data, create hyperplane (model)
+    model.fit(X, y)
 
-accuracy_X_t = accuracy_score(y_t, y_pred_t)
-precision_X_t = precision_score(y_t, y_pred_t)
+    # prior chance level
+    print('Prior chance: %0.2f \n' % (y_t.sum()/float(y_t.shape[0])))
 
-print('testing dataset')
-print('confusion_matrix')
-print(confusion_matrix_X_t)
-print('accuracy: %.2f' % accuracy_X_t)
-print('precision: %.2f' % precision_X_t)
-print('')
+    # predict samples' classes for TRAINING dataset (resubstitution)
+    y_pred = model.predict(X)
+    confusion_matrix_X = confusion_matrix(y, y_pred)
+
+    accuracy_X = accuracy_score(y, y_pred)
+    precision_X = precision_score(y, y_pred)
+
+    print('training dataset')
+    print('confusion_matrix')
+    print(confusion_matrix_X)
+    print('accuracy: %.2f' % accuracy_X)
+    print('precision: %.2f' % precision_X)
+    print('')
+
+    # predict samples' classes for TESTING dataset
+    y_pred_t = model.predict(X_t)
+    confusion_matrix_X_t = confusion_matrix(y_t, y_pred_t)
+
+    accuracy_X_t = accuracy_score(y_t, y_pred_t)
+    precision_X_t = precision_score(y_t, y_pred_t)
+
+    print('testing dataset')
+    print('confusion_matrix')
+    print(confusion_matrix_X_t)
+    print('accuracy: %.2f' % accuracy_X_t)
+    print('precision: %.2f' % precision_X_t)
+    print('')
